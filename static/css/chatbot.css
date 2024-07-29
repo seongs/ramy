@@ -1,0 +1,79 @@
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    border: none;
+    overflow: auto;
+}
+
+/* 프레임 a */
+.header {
+    display: inline-flex;
+    padding: 6px 96px 6px 6px;
+    align-items: center;
+    gap: 50px;
+    background: #FFF;
+}
+
+/* 버튼 */
+.button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #FFF;
+}
+
+/* 빈 공간 */
+.header-space {
+    display: inline-flex;
+    padding: 6px 96px 6px 6px;
+    align-items: center;
+    gap: 50px;
+    background: #FFF;
+}
+
+.header-content {
+    display: flex;
+    width: 168px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: -15px;
+}
+
+/* 래미 스타일 */
+.ramy {
+    color: #FF8129;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline;
+    /* 가로로 나오게 설정 */
+}
+
+/* 대화중 스타일 */
+.conversation {
+    color: #222;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline;
+    /* 가로로 나오게 설정 */
+}
+
+.chat-container {
+    position: relative;
+    /* 채팅 컨테이너 스타일 */
+}
+
+.ramy-head {
+    width: 32px;
+    height: 32px;
+    margin-top: -6px;
+}
+

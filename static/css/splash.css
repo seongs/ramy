@@ -1,0 +1,146 @@
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    border: none;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* container에 flex 속성을 추가하여 내부 요소들을 세로 방향으로 정렬합니다. */
+    justify-content: center;
+    /* 내부 요소들을 세로 방향으로 가운데 정렬합니다. */
+
+    /* 배경 이미지 추가 */
+    background-image: url('../png/splash_bg.png');
+    /* 이미지 파일 경로를 지정하세요 */
+    background-size: cover;
+    /* 이미지가 컨테이너 전체를 커버하도록 설정 */
+    background-position: center;
+    /* 이미지를 중앙에 위치시킴 */
+    background-repeat: no-repeat;
+    /* 이미지가 반복되지 않도록 설정 */
+}
+
+h1 {
+    color: #222;
+
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #555;
+
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3 {
+    color: #FFF;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+h4 {
+    color: #888;
+
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.login {
+    color: #FF8029;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+
+img {
+    display: block;
+
+    margin: auto;
+}
+
+.start-link {
+    display: inline-block;
+    /* flex-shrink는 inline-block에서는 필요하지 않습니다 */
+    width: 328px;
+    height: 52px;
+    line-height: 52px;
+    /* 텍스트를 버튼의 중앙에 위치시키기 위해 */
+    border-radius: 26px;
+    background: #ff8029;
+    color: white;
+    text-decoration: none;
+    /* 기본 링크 밑줄 제거 */
+    margin-top: 2em;
+    /* 상단 여백 조정 */
+    cursor: pointer;
+    /* 클릭 가능한 요소임을 나타냄 */
+    text-align: center;
+    justify-content: center;
+    font-family: Pretendard;
+    /* 폰트 */
+    font-size: 16px;
+    /* 폰트 크기 */
+    font-style: normal;
+    /* 폰트 스타일 */
+    font-weight: 700;
+    /* 폰트 두께 */
+    margin-top: 45px;
+
+
+}
+
+.tooltip-container {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    /* 세로 방향 중앙 정렬 */
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background: #fff;
+    width: 156px;
+    height: 15px;
+    text-align: center;
+    margin: auto;
+    /* 추가로 width를 정의하거나 다른 스타일을 적용할 수 있습니다 */
+}
+
+.tooltip-text {
+    color: #555;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 필요한 경우 여기에 추가 스타일을 적용할 수 있습니다 */
+}
+
+.ramy-image {
+    width: 241.667px;
+    height: 270px;
+    flex-shrink: 0;
+}

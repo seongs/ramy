@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Main Screen </title>
+    <link rel="stylesheet" href="main2.css">    
+    <link rel="stylesheet" href="menuBar_diary.css">  
+    <link rel="stylesheet" href="topbar.css">
+    <link rel="stylesheet" href="docbar.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar"><img src="png/topbar.png" class="topbar"></div>
+        <!-- 프레임 a -->
+        <div id="diary-content">
+            <div class="frame-a">
+                <!-- 버튼 -->
+                <a href="main.html">
+                    <img src="png/x.png" alt="Close">
+                </a>
+
+                <!-- 빈 공간 -->
+                <div class="empty-space">
+                    <div class="text-content">
+                        <span class="date">2023.11.29</span>
+                    </div>
+                </div>
+                <a href="#">
+                    <img src="png/alarmDefault.png" alt="alarm">
+                </a>                
+            </div>
+        </div>
+        
+        
+        <div class="menu-bar">
+            <a href="emobeha.html" class="menu-item analysis">
+              <div class="item-content">
+                <img src="png/analysis.png" alt="분석">
+                <span>분석</span>
+              </div>
+            </a>
+            <a href="diary_write.html" class="menu-item diary-write">
+              <div class="item-content">
+                <img src="png/writeDiary.png" alt="일기작성">
+                <span>일기작성</span>
+              </div>
+            </a>
+            <a href="main.html" class="menu-item home">
+              <div class="item-content">
+                <img src="png/home.png" alt="홈">
+                <span>홈</span>
+              </div>
+            </a>
+            <a href="#" class="menu-item mypage">
+              <div class="item-content">
+                <img src="png/mypage.png" alt="마이페이지">
+                <span>마이페이지</span>
+              </div>
+            </a>
+            <a href="chatbot.html" class="menu-item ramy">
+              <div class="item-content"></div>
+              <img src="png/ramy_head.png" alt="래미" class="ramy-head">
+              <span>래미</span>
+            </a>
+        </div>
+        <div class="docbar"><img src="png/docbar.png" class="docbar"></div>
+    </div>
+</body>

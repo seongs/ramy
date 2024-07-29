@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/diary_write.css">
+  <link rel="stylesheet" href="../css/menuBar_diary.css">
+  <link rel="stylesheet" href="../css/topbar.css">
+  <link rel="stylesheet" href="../css/docbar.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">작성 완료!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          래미의 분석이 완료되면 알림을 보내드릴게요!
+        </div>
+        <div class="modal-footer" style="flex-wrap: nowrap;">
+          <button type="button" class="btn-secondary" data-bs-dismiss="modal">취소</button>
+          <button type="button" class="btn-primary" id="btn-primary">확인</button> <!-- 백으로 데이터 가도록-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="topbar"><img src="../png/topbar.png" class="topbar"></div>
+    <!-- 프레임 a -->
+    <div id="diary-content">
+      <div class="header">
+        <!-- 버튼 -->
+        <a href="main.html">
+          <img src="../png/x.png" alt="Close">
+        </a>
+
+        <!-- 빈 공간 -->
+        <div class="header-space">
+          <div class="header-content">
+            <span class="date">2023.11.29</span>
+          </div>
+        </div>
+        <!-- <a class="save-button" href="diary_See.html">저장</a> -->
+      </div>
+    </div><br>
+    <div class="save-buttons-container">
+      <button class="save-button" id="temporary-save" href="#">임시저장</a>
+        <button class="save-button" id="final-save" href="diary_See.html" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">최종저장</a>
+    </div>
+    <br>
+    
+    <textarea name="diaryEntry" class="diaryEntry" placeholder="여기에 일기를 적어보세요"></textarea>
+  
+
+  <br>
+  <div class="menu-bar">
+    <a href="move_in_analysis.html" class="menu-item analysis">
+      <div class="item-content">
+        <img src="../png/analysis.png" alt="분석">
+        <span>분석</span>
+      </div>
+    </a>
+    <a href="diary_write.html" class="menu-item diary-write">
+      <div class="item-content">
+        <img src="../png/click-writeDiary.png" alt="일기작성">
+        <span>일기작성</span>
+      </div>
+    </a>
+    <a href="main.html" class="menu-item main">
+      <div class="item-content">
+        <img src="../png/home.png" alt="홈">
+        <span>홈</span>
+      </div>
+    </a>
+    <a href="mypage.html" class="menu-item mypage">
+      <div class="item-content">
+        <img src="../png/mypage.png" alt="마이페이지">
+        <span>마이페이지</span>
+      </div>
+    </a>
+    <a href="chatbot.html" class="menu-item ramy">
+      <div class="item-content"></div>
+      <img src="../png/ramy_head.png" alt="래미" class="ramy-head">
+      <span>래미</span>
+    </a>
+  </div>
+  
+
+
+  <div class="docbar"><img src="../png/docbar.png" class="docbar"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <!-- <script src="../js/diary_write.js"></script>  -->
+    <script src="../js/diaryWrite.js"></script> 
+</body>
+
+</html>

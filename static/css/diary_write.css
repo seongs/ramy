@@ -1,0 +1,229 @@
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 280px !important;
+    /* 모달의 너비 설정 */
+
+    flex-shrink: 0;
+    /* flex 아이템이 축소되지 않도록 설정 */
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+    margin: auto;
+    /* 모달을 중앙 정렬 */
+
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: var(--bs-modal-title-line-height);
+    margin-left: 88px;
+}
+
+.fs-5 {
+    color: #222;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* .modal-footer {
+    /* justify-content: space-evenly; */
+/* display: grid !important;
+    grid-template-columns: auto auto;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center !important;
+    padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
+    background-color: var(--bs-modal-footer-bg);
+    border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
+    border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+    border-bottom-left-radius: var(--bs-modal-inner-border-radius); */
+
+
+.btn-secondary {
+    width: 120px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background: #FFF;
+    color: #222;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-primary {
+    width: 120px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FF8029;
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+    color: #555;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    border: none;
+    overflow: auto;
+}
+
+.header {
+    display: inline-flex;
+    padding: 6px 96px 6px 6px;
+    align-items: center;
+    gap: 40px;
+    background: #FFF;
+    justify-content: space-between;
+
+}
+
+/* 버튼 */
+.button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #FFF;
+}
+
+.save-buttons-container {
+    display: flex;
+    justify-content: center;
+    /* 버튼을 가운데 정렬 */
+    gap: 2px;
+    /* 버튼 사이의 간격 */
+}
+
+.save-button {
+    display: inline-block;
+    /* flex-shrink는 inline-block에서는 필요하지 않습니다 */
+    width: 150px;
+    height: 52px;
+    line-height: 52px;
+    /* 텍스트를 버튼의 중앙에 위치시키기 위해 */
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    /* 125% */
+    text-decoration: none;
+    /* 기본 링크 밑줄 제거 */
+    margin-top: 2em;
+    /* 상단 여백 조정 */
+    cursor: pointer;
+    /* 클릭 가능한 요소임을 나타냄 */
+    flex-shrink: 0;
+    margin: auto;
+    margin-top: 20px;
+    /* 상단 여백을 동일하게 설정 */
+    margin-left: 8px;
+    background: #ff8029;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Pretendard;
+    line-height: 52px;
+    /* 텍스트를 버튼의 중앙에 위치시키기 위해 */
+    margin: auto;
+    border-radius: 4px;
+}
+
+
+/* 빈 공간 */
+.header-space {
+    display: inline-flex;
+    padding: 6px 6px 6px 6px;
+    align-items: center;
+    gap: 40px;
+    background: #FFF;
+}
+
+.header-content {
+    display: flex;
+    width: 168px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: -15px;
+}
+
+.date {
+    color: #222;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+    margin-right: 32px;
+}
+
+.diaryEntry {
+    display: flex;
+    width: 328px;
+    height: 490px;
+    padding: 6px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    background: #FFF;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    flex-shrink: 0;
+    display: flex;
+    text-align: left;
+
+}
+
+.text-box {
+    width: 304px;
+    flex-shrink: 0;
+    color: #222;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-align: left;
+}

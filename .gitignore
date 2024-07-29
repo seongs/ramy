@@ -1,0 +1,9 @@
+venv/
+storage/
+data/
+.idea/
+.env
+*.json
+test.py
+__pycache__
+*.csv

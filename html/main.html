@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menuBar_main.css">
+    <link rel="stylesheet" href="../css/topbar.css">
+    <link rel="stylesheet" href="../css/docbar.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../js/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+
+<body>
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">도쮸님의 일간분석</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           2023년 12월 05일 분석 결과 도쮸님의 감정은 혐오감이 가득하군요. 오늘은 다소 폭력적인 행동을 할 가능성이 높아 보여요. 마음을 다스리고 부처 같은 마음으로 누군가를 찾아 보는게 어떨까요? 가끔 밖으로 나가 스트레칭도 하세요! 이젠 할 말이 없네요 글자 채우기 테스트에요!!!!!!!!!!!!!!!!!!!
+        </div>
+        <div class="modal-footer ">          
+          <button type="button" class="btn-primary" id="btn-primary" >확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+        <div class="topbar"><img src="../png/topbar.png" class="topbar"></div>
+        <!-- 프레임 a -->
+
+        <div class="frame-a">
+            <!-- 버튼 -->
+            <a href="main.html">
+                <img src="../png/RAM.png" alt="Close">
+            </a>
+
+            <!-- 빈 공간 -->
+            <div class="empty-space">
+                <div class="text-content">
+                    <span class="date"></span>
+                </div>
+            </div>
+            <a href="#">
+                <img src="../png/alarmDefault.png" alt="alarm" class="speaker">
+            </a>
+        </div>
+        <div class="frame-b">
+            <div class="text-content-b">
+                <span class="nickname">도쮸</span>
+                <span class="conversation1">님, 반가워요.</span>
+                <span class="conversation2">오늘 하루는 어땠나요?</span>
+            </div>
+            <div class="img-ramy"><img src="../png/ramy_fullshot.png" class="ramy-fullshot"></div>
+        </div>
+        <button class="frame-c" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div id="test">
+                <img src="../png/gotoDaily.png" alt="gotoDaily">
+                <span class="middle-alarm">오늘은 도착한 소식이 없어요.</span> 
+            </div>
+        </button>
+
+        <div class="Calendar_table">
+            <!-- 캘린더 표시를 위한 테이블 구조 -->
+            <table class="Calendar">
+                <thead>
+                    <!-- 이전 달, 다음 달 이동 버튼 및 연/월 표시 -->
+                    <tr>
+                        <td onClick="prevCalendar();" style="cursor:pointer;">&#60;</td>
+                        <td colspan="5">
+                            <span id="calYear"></span>년
+                            <span id="calMonth"></span>월
+                        </td>
+                        <td onClick="nextCalendar();" style="cursor:pointer;">&#62;</td>
+                    </tr>
+                    <!-- 요일 헤더 -->
+                    <tr>
+                        <td>일</td>
+                        <td>월</td>
+                        <td>화</td>
+                        <td>수</td>
+                        <td>목</td>
+                        <td>금</td>
+                        <td>토</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- JavaScript를 통해 여기에 날짜들이 동적으로 생성됩니다. -->
+                </tbody>
+            </table>
+        </div>
+        <a class="gotoWrite" href="diary_write.html"> + 일기 작성하기 </a>
+    </div>
+
+
+
+
+    <div class="menu-bar">
+        <a href="move_in_analysis.html" class="menu-item analysis">
+            <div class="item-content">
+                <img src="../png/analysis.png" alt="분석">
+                <span>분석</span>
+            </div>
+        </a>
+        <a href="diary_write.html" class="menu-item diary-write">
+            <div class="item-content">
+                <img src="../png/writeDiary.png" alt="일기작성">
+                <span>일기작성</span>
+            </div>
+        </a>
+        <a href="main.html" class="menu-item main">
+            <div class="item-content">
+                <img src="../png/click-home.png" alt="홈">
+                <span>홈</span>
+            </div>
+        </a>
+        <a href="mypage.html" class="menu-item mypage">
+            <div class="item-content">
+                <img src="../png/mypage.png" alt="마이페이지">
+                <span>마이페이지</span>
+            </div>
+        </a>
+        <a href="chatbot.html" class="menu-item ramy">
+            <div class="item-content"></div>
+            <img src="../png/ramy_head.png" alt="래미" class="ramy-head">
+            <span>래미</span>
+        </a>
+    </div>
+    <div class="docbar"><img src="../png/docbar.png" class="docbar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <script src="../js/diary_write.js"></script>
+</body>
+
+</html>

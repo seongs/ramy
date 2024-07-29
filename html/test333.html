@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>간단한 챗봇 테스트</title>
+</head>
+<body>
+    <h2>챗봇 테스트</h2>
+    <input type="text" id="userInput" placeholder="메시지 입력">
+    <button onclick="sendMessage()">전송</button>
+
+    <p>응답: <span id="botResponse"></span></p>
+
+    <script>
+        async function sendMessage() {
+    const userInput = document.getElementById('userInput').value;
+    const responseContainer = document.getElementById('botResponse');
+
+    // FastAPI 서버에 POST 요청을 보내는 코드
+    const response = await fetch('/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: userInput })
+    });
+    const data = await response.json();
+
+    // 서버로부터 받은 응답을 화면에 표시
+    responseContainer.innerText = data.response;
+}
+
+    </script>
+</body>
+</html>
+
